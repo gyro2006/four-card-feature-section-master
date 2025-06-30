@@ -10,35 +10,120 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      color: hsl(212, 6%, 44%);
+      background-color: hsl(0, 0%, 100%);
+      text-align: center;
+      font-family: poppins;
+    }
+    span {
+      color: hsl(234, 12%, 34%);
+      font-weight: 600;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      margin-inline: 25px;
+    }
+    .head {
+      margin: auto;
+      margin-top: 80px;
+      max-width: 500px;
+    }
+    h1 {
+      font-weight: 200;
+      line-height: 45px;
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      margin-bottom: 1px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+      
+    .card {
+      font-size: 13px;
+      font-weight: 400;
+      display: grid;
+      border-top: 5px solid black;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 15px;
+      margin-top: 30px;
+      max-height: 125px;
+      max-width: 280px;
+      text-align: left;
+      padding-inline: 30px;
+      padding-top: 10px;
+      padding-bottom: 100px;
+    }
+    h2 {
+      color: hsl(234, 12%, 34%);
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    img {
+      margin-left: 210px;
+      margin-top: 30px;
+    }
+    .sus {
+      border-top: 5px solid hsl(180, 62%, 55%);
+    }
+    .tb {
+      border-top: 5px solid hsl(0, 78%, 62%);
+    }
+    .kar {
+      border-top: 5px solid hsl(34, 97%, 64%);
+    }
+    .calc {
+      border-top: 5px solid hsl(212, 86%, 64%);
+    }
+    @media(min-width: 1000px){
+      .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 35px;
+    }
+    }
   </style>
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
+  <div class="head">
+    <h1>Reliable, efficient delivery
+    <span>Powered by Technology</span></h1> 
+    <p>Our Artificial Intelligence powered tools use millions of project data points 
+    to ensure that your project is successful</p> 
+  </div>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
+  <div class="container">
+    <div class="card sus"><h2>Supervisor</h2> 
+    Monitors activity to identify project roadblocks
+    <img src="images/icon-supervisor.svg" alt="Supervisor"> </div>
+    <div>
+        <div class="card tb"><h2>Team Builder</h2> 
+        Scans our talent network to create the optimal team for your project
+          <img src="images/icon-team-builder.svg" alt="team builder"> 
+        </div>
+        <div class="card kar"><h2>Karma</h2> 
+        Regularly evaluates our talent to ensure quality
+          <img src="images/icon-karma.svg" alt="Karma"> 
+        </div>
+    </div>
+    <div class="card calc"><h2>Calculator</h2> 
+    Uses data from past projects to provide better delivery estimates
+    <img src="images/icon-calculator.svg" alt="Calculator"> </div>
+  </div>
+    
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/gyro2006" target="_blank">Jairo Delgado</a>.
     </p>
   </footer>
 </body>
